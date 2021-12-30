@@ -7,7 +7,7 @@
     "test": "jest --watch",
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "start": "webpack serve --mode=development",
+    "start": "nodemon src/index.js localhost ",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "deploy": "gh-pages -d dist",
@@ -29,7 +29,7 @@
     "url": "https://github.com/avadhutprabhudesai/node-template/issues"
   },
   "homepage": "https://github.com/avadhutprabhudesai/node-template#readme",
-   "devDependencies": {
+  "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/eslint-parser": "^7.13.8",
     "@babel/eslint-plugin": "^7.13.0",
@@ -57,13 +57,13 @@
     "husky": "^5.1.3",
     "jest": "^27.0.6",
     "lint-staged": "^10.5.4",
+    "mini-css-extract-plugin": "^1.3.9",
+    "nodemon": "^2.0.15",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2",
-
-    "mini-css-extract-plugin": "^1.3.9"
-   },
-   "config": {
+    "webpack-dev-server": "^3.11.2"
+  },
+  "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
